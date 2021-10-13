@@ -30,3 +30,6 @@ var x = setInterval(function() {
 }, 1000);
 
 AOS.init();
+
+var aud = document.getElementById("myAudio");
+aud.play(); // this will do the trick :)

@@ -14,19 +14,28 @@
     <link href="<?= base_url() ?>/src/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="//unpkg.com/alpinejs" defer></script>
+    
     <script src="<?= base_url() ?>/src/main.js" defer></script>
+   
+    
     <title>Praja & Anik</title>
 </head>
-<body data-aos="fade-right"data-aos-duration="3000"class="" style="background: url('<?=base_url()?>/img/body.jpeg');background-position: top; 
+<body data-aos="fade-right"data-aos-duration="3000"class="scale-50" style="background: url('<?=base_url()?>/img/welcome4.jpg');background-position: top; 
   background-repeat: no-repeat; 
   " width=100%>
+  
+ 
+    
+  <div class="bg-gray-400 bg-opacity-10">
     <?= view('components/welcome') ?>
     <?= view('components/placentime') ?>
     <?= view('components/savethedate') ?>
     <?= view('components/gallery') ?>
-    <?= view('components/guestbook') ?>
-    <?= view('components/footer') ?>
     
+    <?= view('components/guestbook') ?>
+
+    <?= view('components/footer') ?>
+    </div>
     <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
